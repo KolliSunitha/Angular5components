@@ -7,7 +7,9 @@ import { AppChildComponent } from '../app-child/app-child.component';
   styleUrls: ['./parent.component.css']
 })
 export class ParentComponent implements OnInit {
-
+  
+  parentMessage : string = "I am Parent";
+  childmessage : string = "I am passed from Parent to child component"
   constructor() { }
 
   ngOnInit() {
