@@ -5,13 +5,19 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { SamplecomponentComponent } from './samplecomponent/samplecomponent.component';
 import { ExpressioncomponentComponent } from './expressioncomponent/expressioncomponent.component';
+import { StudentsComponent } from './students/students.component';
+import { AppChildComponent } from './app-child/app-child.component';
+import { ParentComponent } from './parent/parent.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SamplecomponentComponent,
-    ExpressioncomponentComponent
+    ExpressioncomponentComponent,
+    StudentsComponent,
+    AppChildComponent,
+    ParentComponent
   ],
   imports: [
     BrowserModule
