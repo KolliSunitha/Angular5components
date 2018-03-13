@@ -8,7 +8,7 @@ import { AppChildComponent } from '../app-child/app-child.component';
 })
 export class ParentComponent implements OnInit {
   
-  parentMessage : string = "I am Parent";
+  //message : string = "I am Parent";
   childmessage : string = "I am passed from Parent to child component"
   constructor() { }
 
