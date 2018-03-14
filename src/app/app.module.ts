@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { StudentsComponent } from './students/students.component';
 import { SamplecomponentComponent } from './samplecomponent/samplecomponent.component';
 import { ExpressioncomponentComponent } from './expressioncomponent/expressioncomponent.component';
 
@@ -15,7 +16,7 @@ import { ParentComponent } from './parent/parent.component';
     AppComponent,
     SamplecomponentComponent,
     ExpressioncomponentComponent,
-    
+    StudentsComponent,
     AppChildComponent,
     ParentComponent
   ],
