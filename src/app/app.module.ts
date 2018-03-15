@@ -9,6 +9,7 @@ import { ExpressioncomponentComponent } from './expressioncomponent/expressionco
 
 import { AppChildComponent } from './app-child/app-child.component';
 import { ParentComponent } from './parent/parent.component';
+import { DirectionsComponent } from './directions/directions.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { ParentComponent } from './parent/parent.component';
     ExpressioncomponentComponent,
     StudentsComponent,
     AppChildComponent,
-    ParentComponent
+    ParentComponent,
+    DirectionsComponent
   ],
   imports: [
     BrowserModule
