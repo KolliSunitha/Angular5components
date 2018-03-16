@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { IStudents } from './students';
 
 @Component({
   selector: 'app-students',
   templateUrl: './students.component.html',
+ // styles :['thead {color :#33ADEF;}']
   styleUrls: ['./students.component.css']
 })
 export class StudentsComponent implements OnInit {
@@ -12,31 +14,31 @@ export class StudentsComponent implements OnInit {
   imagemargin : Number = 2;
   showImage : Boolean = false;
   listFilter :String = 'cart';
-  students: any[] = [
+  students: IStudents[] = [
     { 
       "studentName" : "Sunitha Kolli",
-      "rollno"      : "5678",
+      "rollno"      : "abc-5678",
       "marks"       : 550,
       "rank"        : 142,
       "imageUrl"    : "../assets/images/recon.jpg",
     },
     { 
       "studentName" : "Priyanka Rasaneni",
-      "rollno"      : "5678",
+      "rollno"      : "xyz-5678",
       "marks"       : 550,
       "rank"        : 142,
       "imageUrl"    : "../assets/images/recon.jpg",
     },
     { 
       "studentName" : "Vamsee Krishna",
-      "rollno"      : "5678",
+      "rollno"      : "pqr-5678",
       "marks"       : 550,
       "rank"        : 142,
       "imageUrl"    : "../assets/images/recon.jpg",
     },
     { 
       "studentName" : "Prem Kumar",
-      "rollno"      : "5678",
+      "rollno"      : "tuv-5678",
       "marks"       : 550,
       "rank"        : 142,
       "imageUrl"    : "../assets/images/recon.jpg",
@@ -50,7 +52,8 @@ export class StudentsComponent implements OnInit {
   }
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() :void {
+    console.log('In onInit');
   }
 
 }
