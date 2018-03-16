@@ -13,7 +13,15 @@ export class StudentsComponent implements OnInit {
   imagewidth: Number = 50;
   imagemargin : Number = 2;
   showImage : Boolean = false;
-  listFilter :String = 'cart';
+  _listFilter :String;
+  get listFilter():String {
+    return this._listFilter;
+  }
+  set listFilter(value:String) {
+    this._listFilter = value ;
+    this.filteredstudents = this.listFilter ? this.performFilter(this.listFilter) : this.students;
+  }
+  filteredstudents : IStudents[];
   students: IStudents[] = [
     { 
       "studentName" : "Sunitha Kolli",
@@ -47,11 +55,21 @@ export class StudentsComponent implements OnInit {
     
 
   ];
+  constructor () {
+    this.filteredstudents = this.students;
+    this.listFilter = 'cart';
+
+  }
+  performFilter (filterBy : string) : IStudents[] {
+    filterBy = filterBy.toLocaleLowerCase();
+    return this.students.filter((students: IStudents) =>
+      students.studentName.toLocaleLowerCase().indexOf(filterBy) !== -1);
+  
+  }
    toggleImage() : void {
     this.showImage = !this.showImage;
   }
-  constructor() { }
-
+  
   ngOnInit() :void {
     console.log('In onInit');
   }

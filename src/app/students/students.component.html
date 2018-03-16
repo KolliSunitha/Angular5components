@@ -30,7 +30,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor='let student of students'>
+            <tr *ngFor='let student of filteredstudents'>
               <td>
                 <img *ngIf = 'showImage' 
                 [src] = 'student.imageUrl' [title] = 'student.studentName' [style.width.px]='imagewidth' [style.margin.px]='imagemargin'></td>
