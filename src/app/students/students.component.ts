@@ -25,21 +25,21 @@ export class StudentsComponent implements OnInit {
     { 
       "studentName" : "Priyanka Rasaneni",
       "rollno"      : "xyz-5678",
-      "marks"       : 550,
+      "marks"       : 55035,
       "rank"        : 142,
       "imageUrl"    : "../assets/images/recon.jpg",
     },
     { 
       "studentName" : "Vamsee Krishna",
       "rollno"      : "pqr-5678",
-      "marks"       : 550,
+      "marks"       : 55045,
       "rank"        : 142,
       "imageUrl"    : "../assets/images/recon.jpg",
     },
     { 
       "studentName" : "Prem Kumar",
       "rollno"      : "tuv-5678",
-      "marks"       : 550,
+      "marks"       : 55055,
       "rank"        : 142,
       "imageUrl"    : "../assets/images/recon.jpg",
     }

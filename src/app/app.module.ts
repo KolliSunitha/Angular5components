@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, Pipe } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 
@@ -11,6 +11,7 @@ import { ExpressioncomponentComponent } from './expressioncomponent/expressionco
 import { AppChildComponent } from './app-child/app-child.component';
 import { ParentComponent } from './parent/parent.component';
 import { DirectionsComponent } from './directions/directions.component';
+import { CovertToSpacesPipe } from './shared/convert-to-spaces.pipe';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { DirectionsComponent } from './directions/directions.component';
     StudentsComponent,
     AppChildComponent,
     ParentComponent,
-    DirectionsComponent
+    DirectionsComponent,
+    CovertToSpacesPipe
   ],
   imports: [
     BrowserModule,
