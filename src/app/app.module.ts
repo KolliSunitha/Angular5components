@@ -12,6 +12,7 @@ import { AppChildComponent } from './app-child/app-child.component';
 import { ParentComponent } from './parent/parent.component';
 import { DirectionsComponent } from './directions/directions.component';
 import { CovertToSpacesPipe } from './shared/convert-to-spaces.pipe';
+import { StarComponent } from './shared/star.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { CovertToSpacesPipe } from './shared/convert-to-spaces.pipe';
     AppChildComponent,
     ParentComponent,
     DirectionsComponent,
-    CovertToSpacesPipe
+    CovertToSpacesPipe,
+    StarComponent
   ],
   imports: [
     BrowserModule,

@@ -37,7 +37,8 @@
               <td>{{student.studentName | uppercase}}</td>
               <td>{{student.rollno | uppercase |convertToSpaces :'-' }}</td>
               <td>{{student.marks | percent:'1.0-2' }}</td>
-              <td>{{student.rank}}</td>
+             <!-- <td>{{student.rank}}</td> -->
+             <td><app-star [grade]= 'student.rank' (gradeClicked) = 'onGradeClicked($event)'></app-star></td>
 
             </tr>
           </tbody>
