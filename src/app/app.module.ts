@@ -13,6 +13,11 @@ import { ParentComponent } from './parent/parent.component';
 import { DirectionsComponent } from './directions/directions.component';
 import { CovertToSpacesPipe } from './shared/convert-to-spaces.pipe';
 import { StarComponent } from './shared/star.component';
+import { FormscomponentsComponent } from './formscomponents/formscomponents.component';
+import { ClickMeComponent } from './formscomponents/click-me.component';
+import { KeyUpComponent } from './formscomponents/keyup.component';
+import { loopBackComponent } from './formscomponents/loopback.component';
+import { userInputComponent } from './formscomponents/userinput.component';
 
 
 @NgModule({
@@ -25,7 +30,12 @@ import { StarComponent } from './shared/star.component';
     ParentComponent,
     DirectionsComponent,
     CovertToSpacesPipe,
-    StarComponent
+    StarComponent,
+    FormscomponentsComponent,
+    ClickMeComponent,
+    KeyUpComponent,
+    loopBackComponent,
+    userInputComponent
   ],
   imports: [
     BrowserModule,
