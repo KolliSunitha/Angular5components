@@ -20,6 +20,7 @@ import { loopBackComponent } from './formscomponents/loopback.component';
 import { userInputComponent } from './formscomponents/userinput.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,8 +36,8 @@ import { userInputComponent } from './formscomponents/userinput.component';
     ClickMeComponent,
     KeyUpComponent,
     loopBackComponent,
-    userInputComponent
-  ],
+    userInputComponent,
+    ],
   imports: [
     BrowserModule,
     FormsModule
