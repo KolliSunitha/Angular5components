@@ -18,6 +18,7 @@ import { ClickMeComponent } from './formscomponents/click-me.component';
 import { KeyUpComponent } from './formscomponents/keyup.component';
 import { loopBackComponent } from './formscomponents/loopback.component';
 import { userInputComponent } from './formscomponents/userinput.component';
+import { ObservablesComponent } from './observables/observables.component';
 
 
 
@@ -37,6 +38,7 @@ import { userInputComponent } from './formscomponents/userinput.component';
     KeyUpComponent,
     loopBackComponent,
     userInputComponent,
+    ObservablesComponent,
     ],
   imports: [
     BrowserModule,
