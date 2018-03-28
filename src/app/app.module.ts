@@ -24,6 +24,7 @@ import { AnimalService } from './animal-details/services/animal.service';
 import { AnyAnimalComponent } from './animal-details/any-animal.component';
 import { LionComponent } from './animal-details/lion.component';
 import { CowComponent } from './animal-details/cow.component';
+import { ComputerComponent } from './computer/computer.component';
 
 
 
@@ -47,7 +48,8 @@ import { CowComponent } from './animal-details/cow.component';
     AnimalDetailsComponent,
     AnyAnimalComponent,
     LionComponent,
-    CowComponent
+    CowComponent,
+    ComputerComponent
     ],
   imports: [
     BrowserModule,
