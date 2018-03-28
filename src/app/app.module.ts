@@ -19,6 +19,11 @@ import { KeyUpComponent } from './formscomponents/keyup.component';
 import { loopBackComponent } from './formscomponents/loopback.component';
 import { userInputComponent } from './formscomponents/userinput.component';
 import { ObservablesComponent } from './observables/observables.component';
+import { AnimalDetailsComponent } from './animal-details/animal-details.component';
+import { AnimalService } from './animal-details/services/animal.service';
+import { AnyAnimalComponent } from './animal-details/any-animal.component';
+import { LionComponent } from './animal-details/lion.component';
+import { CowComponent } from './animal-details/cow.component';
 
 
 
@@ -39,6 +44,10 @@ import { ObservablesComponent } from './observables/observables.component';
     loopBackComponent,
     userInputComponent,
     ObservablesComponent,
+    AnimalDetailsComponent,
+    AnyAnimalComponent,
+    LionComponent,
+    CowComponent
     ],
   imports: [
     BrowserModule,

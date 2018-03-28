@@ -57,7 +57,7 @@ export class ObservablesComponent {
   constructor() {
   }
 
-  init() {
+  /*init() {
       this.data = new Observable(observer => {
           setTimeout(() => {
               observer.next(42);
@@ -78,7 +78,7 @@ export class ObservablesComponent {
           () => this.finished = true
       );
   }
-
+*/
 }
 
 

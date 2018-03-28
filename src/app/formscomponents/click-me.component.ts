@@ -1,5 +1,5 @@
 import {Component } from '@angular/core';
-import { Server } from 'selenium-webdriver/safari';
+//import { Server } from 'selenium-webdriver/safari';
 
 @Component ({
     selector: 'app-click-me',
