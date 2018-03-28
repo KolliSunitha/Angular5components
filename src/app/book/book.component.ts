@@ -1,5 +1,7 @@
 import { Component, OnInit, InjectionToken, Inject } from '@angular/core';
 import { Book } from './book';
+import { BookService } from './book.service';
+import { PREFERRED_BOOKS, prefferedBooksFactory } from './preferred-books';
 
 
 const Java_Book = new Book('Learning Angular', 'JavaScript');
@@ -7,17 +9,17 @@ export const HELLO_MESSAGE = new InjectionToken<string>('Hello');
 
 @Component({
   selector: 'app-book',
-  providers : [
+  providers : [BookService,
     { provide:Book, useValue : Java_Book } ,
-    { provide:HELLO_MESSAGE , useValue: 'Hello World !!!' }
+    { provide:PREFERRED_BOOKS , useFactory: prefferedBooksFactory(3),deps:[Book, BookService] }
   ],
-  template: `<p>Book Name :<b>{{book.name}}</b></p>
-  <p>Category : <b>{{book.category}}</b></p>
-  <p>Message : <b>{{message}}</b></p>`
+  template: `
+    <h1>PrefferedBooks {{preferredbooks}}</h1>`
   
 })
 export class BookComponent implements OnInit {
-  constructor(private book : Book, @Inject(HELLO_MESSAGE) private message : string) { }
+  //constructor(private book : Book, @Inject(HELLO_MESSAGE) private message : string) { }
+  constructor(@Inject(PREFERRED_BOOKS) private preferredbooks : string) { }
 
   ngOnInit() {
   }
