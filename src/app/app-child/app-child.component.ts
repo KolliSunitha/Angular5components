@@ -6,9 +6,9 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./app-child.component.css']
 })
 export class AppChildComponent implements OnInit {
-  //@Input() message: String;
-   //greetMessage: String ="Welcome Kid Component";
-   _greetMessage : String;
+  @Input() message: String;
+  greetMessage: String ="Welcome Kid Component";
+  // _greetMessage : String;
 
   constructor() { }
 
@@ -17,11 +17,11 @@ export class AppChildComponent implements OnInit {
 
 
 
-@Input()
+/*@Input()
 set greetMessage(childmessage : String) {
   this._greetMessage = childmessage + "Changes in Child Component";
 }
 get greetMessage() {
   return this._greetMessage;
-}
+}*/
 }

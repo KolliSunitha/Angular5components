@@ -8,8 +8,8 @@ import { AppChildComponent } from '../app-child/app-child.component';
 })
 export class ParentComponent implements OnInit {
   
-  //message : string = "I am Parent";
-  childmessage : string = "I am passed from Parent to child component"
+  message : string = "I am Parent";
+  //childmessage : string = "I am passed from Parent to child component"
   constructor() { }
 
   ngOnInit() {

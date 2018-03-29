@@ -26,6 +26,7 @@ import { LionComponent } from './animal-details/lion.component';
 import { CowComponent } from './animal-details/cow.component';
 import { ComputerComponent } from './computer/computer.component';
 import { BookComponent } from './book/book.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 
 
@@ -51,7 +52,8 @@ import { BookComponent } from './book/book.component';
     LionComponent,
     CowComponent,
     ComputerComponent,
-    BookComponent
+    BookComponent,
+    PipesComponent
     ],
   imports: [
     BrowserModule,

@@ -10,7 +10,7 @@ export function prefferedBooksFactory (count: number) {
         return bookService.getAllBooks()
         .filter(book =>book.category === myBook.category)
         .map (book => book.name)
-        .slice(0,Math.max(0, count))
+        .slice(0, Math.max(0, count))
         .join('|');
     };
 };
