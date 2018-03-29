@@ -1,0 +1,34 @@
+<div> 
+  The name of this Tutorial is {{TutorialName}}<br>  
+  The first Topic is {{appList[0] | lowercase}}<br> 
+  The second Topic is {{appList[1] | lowercase}}<br> 
+  The third Topic is {{appList[2]| lowercase}}<br> 
+</div> 
+
+
+<div> 
+  The name of this Tutorial is {{TutorialName}}<br>  
+  The first Topic is {{appList[0] | uppercase}}<br> 
+  The second Topic is {{appList[1] | uppercase}}<br> 
+  The third Topic is {{appList[2]| uppercase}}<br> 
+</div>
+<br><br>
+<div> <h3>Using Slice</h3>
+  The name of this Tutorial is {{TutorialName}}<br>  
+  The first Topic is {{appList[0] | slice:1:2}}<br> 
+  The second Topic is {{appList[1] | slice:1:3}}<br> 
+  The third Topic is {{appList[2]| slice:2:3}}<br> 
+</div> 
+
+<div> <h3>Date Format</h3>
+  Date  is {{newdate | date:"M/d/yy"}}<br>  
+</div>
+
+<br><br>
+<div> <h3>Currency</h3>
+  The currency is  {{newValue | currency}}<br> 
+  </div>
+<br><br>
+  <div> <h3>Percentage</h3>
+    percentage is {{perValue | percent:'2.2-5'}}<br>  
+ </div>
