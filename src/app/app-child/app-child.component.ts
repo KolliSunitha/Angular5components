@@ -6,8 +6,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./app-child.component.css']
 })
 export class AppChildComponent implements OnInit {
-  @Input() message: String;
-  greetMessage: String ="Welcome Kid Component";
+  //@Input() message: String;
+  @Input() greetMessage: String ="Welcome Kid Component";
   // _greetMessage : String;
 
   constructor() { }
