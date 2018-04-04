@@ -31,6 +31,7 @@ import { PipesComponent } from './pipes/pipes.component';
 import { RoutersComponent } from './routers/routers.component';
 import { Router1Component } from './routers/router1.component';
 import { Router2Component } from './routers/router2.component';
+import { DiComponent } from './di/di.component';
 
 const appRoutes: Routes = [
   { path: 'router2', component: Router2Component },
@@ -65,7 +66,8 @@ const appRoutes: Routes = [
     PipesComponent,
     RoutersComponent,
     Router1Component,
-    Router2Component
+    Router2Component,
+    DiComponent
     ],
   imports: [
     BrowserModule,
